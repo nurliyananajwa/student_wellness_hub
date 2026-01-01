@@ -92,4 +92,11 @@
         background: #6c757d;
         color: white;
         border-radius: 20px;
+
     }
+@media (max-width: 768px) {
+    .table-card { margin: 0.5rem; padding: 10px; }
+    
+    .table, thead, tbody, th, td, tr { display: block; }
+    
+    thead tr { position: absolute; top: -9999px; left: -9999px; }
