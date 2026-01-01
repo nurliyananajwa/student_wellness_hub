@@ -1,4 +1,4 @@
-# Student Wellness Portal 🌿
+# Student Wellness Hub 🌿
 ADVANCED WEB DESIGN DEVELOPMENT AND CONTENT MANAGEMENT (IMS566) PAIRING PROJECT
 
 ## 📌 Project Overview
@@ -43,7 +43,7 @@ Use this Login Credentials:
 
 4) Explore wellness activities and health articles provided in the dashboard.
 
-**👥 Developer**
+**👥 Developers**
 
 Nurliyana Najwa - @nurliyananajwa
 
