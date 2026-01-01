@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Student Wellness Resources</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/script.css">
+<link rel="stylesheet" href="css/resources.css">
+
+</head>
+
+<body>
+<!-- ===== NavBar ===== -->
+<div id="sidebar">
+  <div class="sidebar-header">
+    <button class="toggle-btn" id="toggleSidebar">
+      <i class="bi bi-list"></i>
+    </button>
+    <span class="menu-text">Menu</span>
+  </div>
+
+  <ul>
+    <li><a href="dashboard.html"><i class="bi bi-house"></i><span class="menu-text">Dashboard</span></a></li>
+    <li><a href="activities.html"><i class="bi bi-calendar-check"></i><span class="menu-text">Activities</span></a></li>
+    <li><a href="resources.html"><i class="bi bi-journal-text"></i><span class="menu-text">Resources</span></a></li>
+    <li>
+      <button id="darkModeToggle">
+        <i class="bi bi-moon"></i>
+        <span class="menu-text">Dark Mode</span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<!-- ===== Main ===== -->
+<div id="content">
+
+  <div class="page-header">
+    <div id="headerAuth" class="d-flex justify-content-end w-100"></div>
+  </div>
+
+  <div class="hero">
+    <h1>Health & Wellness Resources</h1>
+    <p>Tips and guides for a healthier student lifestyle.</p>
+  </div>
+
+  <!-- Filter -->
+  <div class="container mb-3 d-flex align-items-center gap-3">
+    <select id="categoryFilter" class="form-select form-select-sm w-auto">
+      <option value="all">All Categories</option>
+      <option value="Physical Health">Physical Health</option>
+      <option value="Mental Health">Mental Health</option>
+      <option value="Lifestyle">Lifestyle</option>
+      <option value="Academic">Academic</option>
+    </select>
+    <small id="resultCount" class="text-muted"></small>
+  </div>
+
+  <!-- Articles -->
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- 1 -->
+      <div class="col-md-4 article-item" data-category="Physical Health">
+        <div class="article-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-success rounded-pill">Physical Health</span>
+            <small class="text-muted ms-2">Published: Nov 2024</small>
+            <h5 class="card-title">Boleh ke nak biasakan kurang gula dalam makanan?</h5>
+            <a href="article1.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-4 article-item" data-category="Mental Health">
+        <div class="article-card">
+          <img src="https://www.sleep.ai/app/uploads/2021/06/MicroSleep.jpg?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-primary rounded-pill">Mental Health</span>
+            <small class="text-muted ms-2">Published: Dec 2024</small>
+            <h5 class="card-title">WASPADA MICROSLEEP! Kenali tanda awal keletihan melampau.</h5>
+            <a href="article2.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-4 article-item" data-category="Physical Health">
+        <div class="article-card">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-success rounded-pill">Physical Health</span>
+            <small class="text-muted ms-2">Published: Jan 2025</small>
+            <h5 class="card-title">Senaman regangan mudah di meja belajar untuk hilangkan sakit bahu.</h5>
+            <a href="article3.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-4 article-item" data-category="Lifestyle">
+        <div class="article-card">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-secondary rounded-pill">Lifestyle</span>
+            <small class="text-muted ms-2">Published: Oct 2024</small>
+            <h5 class="card-title">Menu 'Meal Prep' bajet untuk pelajar universiti yang sibuk.</h5>
+            <a href="article4.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-4 article-item" data-category="Mental Health">
+        <div class="article-card">
+          <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-primary rounded-pill">Mental Health</span>
+            <small class="text-muted ms-2">Published: Nov 2024</small>
+            <h5 class="card-title">Kesan buruk tidak tidur malam (stay up) terhadap memori anda.</h5>
+            <a href="article5.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-4 article-item" data-category="Academic">
+        <div class="article-card">
+          <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark rounded-pill">Academic</span>
+            <small class="text-muted ms-2">Published: Jan 2025</small>
+            <h5 class="card-title">Cara menguruskan tekanan (stress) semasa minggu peperiksaan.</h5>
+            <a href="article6.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-md-4 article-item" data-category="Mental Health">
+        <div class="article-card">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-primary rounded-pill">Mental Health</span>
+            <small class="text-muted ms-2">Published: Dec 2024</small>
+            <h5 class="card-title">Kepentingan meditasi 5 minit setiap pagi untuk fokus belajar.</h5>
+            <a href="article7.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-md-4 article-item" data-category="Physical Health">
+        <div class="article-card">
+          <img src="https://www.cappinophysio.ca/wp-content/uploads/2023/03/outdoor-jogging-tips-1080x675.jpg?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-success rounded-pill">Physical Health</span>
+            <small class="text-muted ms-2">Published: Sep 2024</small>
+            <h5 class="card-title">Larian 2.4km: Tips tingkatkan stamina tanpa rasa cepat penat.</h5>
+            <a href="article8.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-md-4 article-item" data-category="Lifestyle">
+        <div class="article-card">
+          <img src="https://www.yadim.com.my/v2/wp-content/uploads/2016/01/airkosong1.jpg?w=500" class="article-img">
+          <div class="card-body">
+            <span class="badge bg-secondary rounded-pill">Lifestyle</span>
+            <small class="text-muted ms-2">Published: Aug 2024</small>
+            <h5 class="card-title">Adakah anda minum air secukupnya hari ini? Kenali tanda dehidrasi.</h5>
+            <a href="article9.html" class="btn-read">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-center mt-4">
+    <p><i>Student Wellness Portal</i></p>
+  </footer>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/resources.js"></script>
+
+</body>
+</html>

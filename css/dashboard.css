@@ -1,0 +1,81 @@
+.dashboard-wrapper {
+        padding: 0 1rem 1.5rem;
+    }
+    @media (min-width: 768px) {
+    .dashboard-wrapper {
+        padding: 0 1.5rem 2rem;}
+    }
+    .dashboard-card {
+        background: #ffffff;
+        border-radius: 16px;
+        border: 1px solid #dee2e6;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.3s;
+        margin-bottom: 20px;
+    }
+    .dashboard-card:hover {
+        transform: translateY(-3px);
+    }
+    body.dark-mode .dashboard-card {
+        background: #1e1e1e;
+        border: 1px solid #333;
+        box-shadow: none;
+        color: #e9ecef;
+    }
+    .insight-card {
+        background: linear-gradient(
+        135deg,
+        rgba(13,110,253,0.06),
+        rgba(255,255,255,0.02)
+    );
+        border-left: 4px solid #0d6efd;
+        transition: 0.3s;
+    }
+    body.dark-mode .insight-card {
+        background: linear-gradient(
+        135deg,
+        rgba(13,110,253,0.15),
+        rgba(255,255,255,0.02)
+    );
+        border-left: 4px solid #0d6efd;
+        color: #e9ecef;
+    }
+    .insight-header { 
+        display: flex; 
+        align-items: center; 
+        gap: 8px; 
+        margin-bottom: 8px; 
+    }
+    .insight-icon { 
+        font-size: 1.1rem; 
+        color: #0d6efd; 
+    }
+    .insight-label { 
+        font-size: 0.75rem; 
+        text-transform: uppercase; 
+        letter-spacing: 0.05em; 
+        color: #6c757d; 
+        font-weight: 600; 
+    }
+    .insight-main { 
+        font-size: 0.95rem; 
+        line-height: 1.6; 
+        margin: 6px 0 10px; 
+    }
+    .insight-meta { 
+        display: flex; 
+        gap: 10px; 
+        font-size: 0.75rem; 
+        color: #6c757d; 
+    }
+    .insight-tag { 
+        background: rgba(13,110,253,0.1); 
+        color: #0d6efd; 
+        padding: 4px 8px; 
+        border-radius: 999px; 
+        font-weight: 500; 
+    }
+    .insight-evidence { 
+        font-style: italic; 
+    }

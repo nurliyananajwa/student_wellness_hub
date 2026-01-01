@@ -1,0 +1,90 @@
+.article-card {
+        border: 1px solid #343a40;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        will-change: transform;
+    }
+    .article-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        border-color: #a18cd1;
+    }
+    .article-img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+        background-color: #e9ecef;
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    .btn-read {
+        color: #a18cd1;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+    }
+    .btn-read:hover {
+        color: #fbc2eb;
+    }
+    .btn-read i {
+        margin-left: 5px;
+        transition: 0.2s;
+    }
+    .btn-read:hover i {
+        margin-left: 10px;
+    }
+    .back-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: rgba(255,255,255,0.1);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 30px;
+        backdrop-filter: blur(10px);
+        text-decoration: none;
+        z-index: 1000;
+    }
+    #content .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 1rem;
+    }
+    .row.g-4 {
+        margin-left: 0;
+        margin-right: 0;
+        align-items: stretch;
+    }
+    .row.g-4 > [class*="col-"] {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .article-item {
+        transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    .article-item.hide {
+        opacity: 0;
+        transform: scale(0.96);
+        pointer-events: none;
+    }
+    .article-card:focus-within {
+        outline: 2px solid #a18cd1;
+        outline-offset: 4px;
+    }
+    @media (max-width: 576px) {
+    .card-body {
+        padding: 16px;}
+    .card-title {
+        font-size: 1rem;}
+    }

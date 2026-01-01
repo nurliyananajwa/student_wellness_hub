@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="login-container">
+  <div class="login-card">
+    <h2>Create Account</h2>
+    <p class="subtitle">Register a new account</p>
+
+    <form id="registerForm">
+      <input type="text" class="form-control" placeholder="Username" required>
+      <input type="password" class="form-control" placeholder="Password" required>
+
+      <button type="submit" class="btn btn-success w-100">Register</button>
+
+      <div id="registerMsg" class="text-success mt-2 d-none">
+        Registration successful! You can now log in.
+      </div>
+    </form>
+
+    <div class="link-text">
+      Already have an account? <a href="index.html">Login</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <i>Student Wellness Portal</i>
+</footer>
+
+<script>
+  const registerForm = document.getElementById("registerForm");
+
+  registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const username = registerForm.querySelector("input[type='text']").value.trim();
+    const password = registerForm.querySelector("input[type='password']").value.trim();
+
+    const users = JSON.parse(localStorage.getItem("users")) || {};
+
+    users[username] = password;
+
+    localStorage.setItem("users", JSON.stringify(users));
+
+    document.getElementById("registerMsg").classList.remove("d-none");
+    registerForm.reset();
+
+    // Optional: auto-redirect after 1.2s
+    setTimeout(() => { window.location.href = "login.html"; }, 1200);
+  });
+</script>
+
+</body>
+</html>
